@@ -181,41 +181,48 @@ section{
 .picture-grid {
     display: flex;
     justify-content: space-evenly;
+    
 }
 .picture-grid2 {
     display: flex;
     justify-content: space-evenly;
 }
 
-.picture-grid a {
-    width: 12%;
+
+.picture-grid .group {
+    width: 35%;
 }
 
 .picture-grid a img{
     border: 5px solid black;
+    width: 70%;
 }
 
-.picture-grid2 a {
-    width: 12%;
+.picture-grid2 .group {
+    width: 35%;
 }
 
 .picture-grid2 a img{
     border: 5px solid black;
+    width: 70%;
 }
 
-.text-links1 {
-    width: 100%;
+.group {
+    width: 20%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
     font-weight: bold;
-    font-family:'Chelsea Market', cursive; 
 }
 
-.text-links1 a {
+.group a{
     color: black;
-    border: 4px solid black;
-    padding: 2%;
+    margin: 2%;
 }
+
 
 footer {
     padding: 10%;
@@ -238,6 +245,55 @@ footer a {
     padding: 2%;
 }
 
+@media (max-width: 800px) {
+
+    .container1 h1, .container1 h2 {
+        margin: 0 auto;
+    }
+
+    .navbar1 {
+        background-color: white;
+    }
+
+    .container1 nav {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin: 0 auto;
+        background-color: none;
+    }
+
+    .container1 nav a {
+        border-radius: 0;
+    }
+
+    .container2 {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .picture-grid {
+        flex-wrap: wrap;
+    }
+
+    .picture-grid2 {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+
+    .navbar1 {
+        background-color: red;
+    }
+}
 
 
 
