@@ -1,1 +1,303 @@
 /* Add CSS styling here */
+/*CSS RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing:border-box; /*only be as big as the width I've given, if I give you padding or I give you a border apply it within your width not in addition to it*/
+    
+    max-width:100%; /*You can never be bigger than your parent*/
+}
+
+/* END OF RESET */
+
+
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5; /*no unit of measurement here*/
+    font-family: 'Roboto Mono', monospace;
+    border: 10px solid black;
+    
+}
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size:6rem;
+}
+a{
+    text-decoration:none;
+}
+section{
+    padding:2% 0;
+    margin: 1%;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3%;
+}
+
+.container1 h1 {
+    margin-left: 12%;
+    color: purple;
+}
+
+.container1 h2 {
+    margin-left: 16.5%;
+    padding-top: .5%;
+    padding-bottom: 1.5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 140%;
+}
+
+
+.navbar1 {
+    width: 100%;
+    margin: 1%;
+    background-color:black;
+    height: 100%;
+}
+
+.navbar1 a {
+    background-color: white;
+    padding: 1%;
+    border-radius: 25%;
+    margin-left: 5%;
+    border: 2px solid black;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar1 a:hover {
+    background-color: black;
+    color: white;
+}
+
+#home {
+    background-color: black;
+    color: white;
+}
+
+#home:hover {
+    background-color: white;
+    color: black;
+}
+
+.container2 {
+    display: flex;
+}
+
+.text-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4%;
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.text-container1 h2 {
+    font-size: 250%;
+    font-family: 'Chelsea Market', cursive;
+}
+
+.text-container1 p {
+    text-align: center;
+}
+
+.projects-link {
+    margin: 2%;
+    background-color: purple;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 25%;
+    color: black;
+    font-family: 'Chelsea Market', cursive;
+}
+
+.image-container1 {
+    width: 100%;
+    height: 100%;
+    margin-left: 8%;
+}
+
+.image-container1 img {
+    border: 5px solid purple;
+}
+
+.rickroll {
+    margin: 2%;
+}
+
+.picture-grid {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.picture-grid2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.picture-grid .group {
+    width: 35%;
+}
+
+.picture-grid a img{
+    border: 5px solid black;
+    width: 70%;
+}
+
+.picture-grid2 .group {
+    width: 35%;
+}
+
+.picture-grid2 a img{
+    border: 5px solid black;
+    width: 70%;
+}
+
+.group {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.group a{
+    color: black;
+    margin: 2%;
+}
+
+
+footer {
+    padding: 10%;
+    padding-top: 2%;
+    background-color: gray;
+    margin-top: 5%;
+    text-align: center;
+    border: 10px solid black;
+}
+
+footer h2 {
+    font-size: 200%;
+    margin-bottom: 3%;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 2%;
+}
+
+@media (max-width: 800px) {
+
+    .container1 h1, .container1 h2 {
+        margin: 0 auto;
+    }
+
+    .navbar1 {
+        background-color: white;
+    }
+
+    .container1 nav {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin: 0 auto;
+        background-color: none;
+    }
+
+    .container1 nav a {
+        border-radius: 0;
+    }
+
+    .container2 {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .picture-grid {
+        flex-wrap: wrap;
+    }
+
+    .picture-grid2 {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+
+    .navbar1 {
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+
